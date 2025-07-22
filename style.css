@@ -1,0 +1,67 @@
+body {
+  background: #eaeaea;
+  font-family: 'Pretendard', 'Arial', sans-serif;
+}
+.tarot-app {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  text-align: center;
+}
+.tarot-controls button {
+  margin: 0 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #fadcd9;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tarot-controls button:hover {
+  background: #f8afa6;
+}
+.tarot-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0 16px 0;
+}
+.tarot-card {
+  width: 120px;
+  height: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  position: relative;
+  transition: transform 0.5s;
+}
+.tarot-card.reversed {
+  transform: rotate(180deg);
+}
+.tarot-card img {
+  width: 100px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.tarot-card-name {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.tarot-card-meaning {
+  font-size: 0.95rem;
+  color: #444;
+}
+.tarot-result {
+  margin-top: 24px;
+  text-align: left;
+}
